@@ -1,0 +1,149 @@
+accounts:
+- '@type': /cosmos.auth.v1beta1.ModuleAccount
+  base_account:
+    account_number: "7"
+    address: blockx1yl6hdjhmkf37639730gffanpzndzdpmhhhhank
+    pub_key: null
+    sequence: "0"
+  name: transfer
+  permissions:
+  - minter
+  - burner
+- '@type': /ethermint.types.v1.EthAccount
+  base_account:
+    account_number: "13"
+    address: blockx1xfhs3qkrw8ysdawwc4ytv9z7ls50gftu4gcg0u
+    pub_key:
+      '@type': /ethermint.crypto.v1.ethsecp256k1.PubKey
+      key: AmBYUPPXWyj4rXuqNensdXmT43G32aJlbfB94fyNDNQd
+    sequence: "1"
+  code_hash: 0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470
+- '@type': /ethermint.types.v1.EthAccount
+  base_account:
+    account_number: "14"
+    address: blockx1gyu492spmha9lrc5ad0vf7uaumlepzgr5389rk
+    pub_key:
+      '@type': /ethermint.crypto.v1.ethsecp256k1.PubKey
+      key: A9ZZd4fA7Qvgh6Z5seFcGKA1apt3KwhkvKQ3e9JMZHAe
+    sequence: "1"
+  code_hash: 0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470
+- '@type': /cosmos.auth.v1beta1.ModuleAccount
+  base_account:
+    account_number: "9"
+    address: blockx1glht96kr2rseywuvhhay894qw7ekuc4qnvjwdn
+    pub_key: null
+    sequence: "0"
+  name: erc20
+  permissions:
+  - minter
+  - burner
+- '@type': /cosmos.auth.v1beta1.ModuleAccount
+  base_account:
+    account_number: "4"
+    address: blockx1fl48vsnmsdzcv85q5d2q4z5ajdha8yu3vngmaz
+    pub_key: null
+    sequence: "0"
+  name: bonded_tokens_pool
+  permissions:
+  - burner
+  - staking
+- '@type': /cosmos.auth.v1beta1.ModuleAccount
+  base_account:
+    account_number: "5"
+    address: blockx1tygms3xhhs3yv487phx3dw4a95jn7t7lcn52tk
+    pub_key: null
+    sequence: "0"
+  name: not_bonded_tokens_pool
+  permissions:
+  - burner
+  - staking
+- '@type': /cosmos.auth.v1beta1.ModuleAccount
+  base_account:
+    account_number: "11"
+    address: blockx1vqu8rska6swzdmnhf90zuv0xmelej4lq56yqsa
+    pub_key: null
+    sequence: "0"
+  name: evm
+  permissions:
+  - minter
+  - burner
+- '@type': /cosmos.auth.v1beta1.ModuleAccount
+  base_account:
+    account_number: "8"
+    address: blockx1d4e35hk3gk4k6t5gh02dcm923z8ck86qlpkn06
+    pub_key: null
+    sequence: "0"
+  name: inflation
+  permissions:
+  - minter
+- '@type': /ethermint.types.v1.EthAccount
+  base_account:
+    account_number: "0"
+    address: blockx10y66748crxw40gweyv9960087magdz4tpyyzr4
+    pub_key:
+      '@type': /ethermint.crypto.v1.ethsecp256k1.PubKey
+      key: A1s5ourIN+7aTxxGWEc7xZWX3MglPKsXNcOzNSTwEncJ
+    sequence: "6"
+  code_hash: 0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470
+- '@type': /cosmos.auth.v1beta1.ModuleAccount
+  base_account:
+    account_number: "6"
+    address: blockx10d07y265gmmuvt4z0w9aw880jnsr700jr2j3jx
+    pub_key: null
+    sequence: "0"
+  name: gov
+  permissions:
+  - burner
+- '@type': /cosmos.auth.v1beta1.ModuleAccount
+  base_account:
+    account_number: "2"
+    address: blockx1jv65s3grqf6v6jl3dp4t6c9t9rk99cd87h9gd2
+    pub_key: null
+    sequence: "0"
+  name: distribution
+  permissions: []
+- '@type': /cosmos.auth.v1beta1.ModuleAccount
+  base_account:
+    account_number: "3"
+    address: blockx15cvq3ljql6utxseh0zau9m8ve2j8erz87jy5gl
+    pub_key: null
+    sequence: "0"
+  name: claims
+  permissions: []
+- '@type': /ethermint.types.v1.EthAccount
+  base_account:
+    account_number: "15"
+    address: blockx14mwtus7ha6e6kdhytrl4km8au9lfvugdtlvjxh
+    pub_key:
+      '@type': /ethermint.crypto.v1.ethsecp256k1.PubKey
+      key: ArWX5h3B5knnGLgp8KgU1VrdzOm9inqXNmIufe6tZu5H
+    sequence: "5"
+  code_hash: 0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470
+- '@type': /cosmos.auth.v1beta1.ModuleAccount
+  base_account:
+    account_number: "10"
+    address: blockx1krxwf5e308jmclyhfd9u92kp369l083wgnwvta
+    pub_key: null
+    sequence: "0"
+  name: incentives
+  permissions:
+  - minter
+  - burner
+- '@type': /ethermint.types.v1.EthAccount
+  base_account:
+    account_number: "12"
+    address: blockx1c0w8dfn7kkxfjz4m4l7zh50nha3v7nz6p7t9ax
+    pub_key: null
+    sequence: "0"
+  code_hash: 0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470
+- '@type': /cosmos.auth.v1beta1.ModuleAccount
+  base_account:
+    account_number: "1"
+    address: blockx17xpfvakm2amg962yls6f84z3kell8c5lf3z50g
+    pub_key: null
+    sequence: "0"
+  name: fee_collector
+  permissions: []
+pagination:
+  next_key: null
+  total: "0"

@@ -1,0 +1,26 @@
+blockxd tx staking create-validator   --amount=1000000000000000000000000abcx   --pubkey=$(blockxd tendermint show-validator)   --moniker="LYNODE"   --chain-id=blockx_12345-1   --commission-rate="0.05"   --commission-max-rate="0.10"   --commission-max-change-rate="0.01"   --min-self-delegation="1000000"   --gas="300000"   --gas-prices="1000000000abcx"   --from=ly --keyring-backend file
+
+blockxd tx staking delegate blockxvaloper1xfhs3qkrw8ysdawwc4ytv9z7ls50gftua287d5 10000000000000000000abcx --from blockx14mwtus7ha6e6kdhytrl4km8au9lfvugdtlvjxh --chain-id blockx_12345-1 --fees 210000000000000abcx
+
+blockxd query distribution rewards blockx10y66748crxw40gweyv9960087magdz4tpyyzr4 blockxvaloper10y66748crxw40gweyv9960087magdz4tfxm5pa --keyring-backend file --chain-id blockx_12345-1
+
+distribution account balance
+1826902000735000
+1858402000882000
+2068402000882000
+
+gas fee
+31500000147000
+210000000000000
+
+
+1100100000001
+
+
+blockxd tx bank send blockx1gyu492spmha9lrc5ad0vf7uaumlepzgr5389rk blockx1mejfzqh74ek6xcrjxnnd6qwfhzlw7h8vp2er4x 300000000000000abcx --keyring-backend file --chain-id blockx_12345-1
+
+blockxd query bank balances blockx1mejfzqh74ek6xcrjxnnd6qwfhzlw7h8vp2er4x
+
+1099999700000000000000
+1099999190000000000000
+200000000000000
