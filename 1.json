@@ -1,3 +1,20 @@
+git clone https://github.com/defi-ventures/bcx-testnet-5.git blockx
+cd blockx
+git checkout main
+make install
+cd $HOME
+blockxd config chain-id blockx_12345-1
+blockxd config keyring-backend file
+rm -rf $HOME/.blockxd
+blockxd init <MY_NODE_NAME> --chain-id blockx_12345-1 --keyring-backend file
+git clone https://github.com/liyong828/blockx_env.git
+cd blockx_env
+cp genesis.json $HOME/.blockxd/config
+cd $HOME
+vim $HOME/.blockxd/config/config.toml
+(insert seednode: 572bad05a5935e9aeab20c77ef2a4506c05b8251@142.93.202.64:26656)
+blockxd start --minimum-gas-prices=1000000000abcx
+
 blockxd tx staking create-validator   --amount=1000000000000000000000000abcx   --pubkey=$(blockxd tendermint show-validator)   --moniker="LYNODE"   --chain-id=blockx_12345-1   --commission-rate="0.05"   --commission-max-rate="0.10"   --commission-max-change-rate="0.01"   --min-self-delegation="1000000"   --gas="300000"   --gas-prices="1000000000abcx"   --from=ly --keyring-backend file
 
 blockxd tx staking delegate blockxvaloper1xfhs3qkrw8ysdawwc4ytv9z7ls50gftua287d5 10000000000000000000abcx --from blockx14mwtus7ha6e6kdhytrl4km8au9lfvugdtlvjxh --chain-id blockx_12345-1 --fees 210000000000000abcx
