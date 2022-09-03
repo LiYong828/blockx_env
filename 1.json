@@ -6,7 +6,7 @@ cd $HOME
 blockxd config chain-id blockx_12345-1
 blockxd config keyring-backend file
 rm -rf $HOME/.blockxd
-blockxd init <MY_NODE_NAME> --chain-id blockx_12345-1 --keyring-backend file
+blockxd init LYNODE --chain-id blockx_12345-1 --keyring-backend file
 git clone https://github.com/liyong828/blockx_env.git
 cd blockx_env
 cp genesis.json $HOME/.blockxd/config
@@ -21,11 +21,19 @@ blockxd tx staking delegate blockxvaloper1xfhs3qkrw8ysdawwc4ytv9z7ls50gftua287d5
 
 blockxd query distribution rewards blockx10y66748crxw40gweyv9960087magdz4tpyyzr4 blockxvaloper10y66748crxw40gweyv9960087magdz4tfxm5pa --keyring-backend file --chain-id blockx_12345-1
 
+blockxd query distribution rewards blockx1gyu492spmha9lrc5ad0vf7uaumlepzgr5389rk blockxvaloper1gyu492spmha9lrc5ad0vf7uaumlepzgruncnp7 --keyring-backend file --chain-id blockx_12345-1
+
 distribution account balance
 1826902000735000
 1858402000882000
 2068402000882000
 
+1239470064000000
+ 617352750000000
+ 41368040017640
+reward:[
+    1239470064000000
+]
 gas fee
 31500000147000
 210000000000000
@@ -38,6 +46,5 @@ blockxd tx bank send blockx1gyu492spmha9lrc5ad0vf7uaumlepzgr5389rk blockx1mejfzq
 
 blockxd query bank balances blockx1mejfzqh74ek6xcrjxnnd6qwfhzlw7h8vp2er4x
 
-1099999700000000000000
+
 1099999190000000000000
-200000000000000
