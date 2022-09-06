@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2022-09-04T04:45:21.498791354Z",
+  "genesis_time": "2022-09-06T10:39:58.180283121Z",
   "chain_id": "blockx_12345-1",
   "initial_height": "1",
   "consensus_params": {
@@ -34,7 +34,7 @@
         {
           "@type": "/ethermint.types.v1.EthAccount",
           "base_account": {
-            "address": "blockx14gct2nk2d9f6rs0edsyg4nuavkng8t8u0qf6dw",
+            "address": "blockx1apuxv2lfwdz9cqrmzqdt0yutdfw58sm24pch9z",
             "pub_key": null,
             "account_number": "0",
             "sequence": "0"
@@ -53,7 +53,7 @@
       },
       "balances": [
         {
-          "address": "blockx14gct2nk2d9f6rs0edsyg4nuavkng8t8u0qf6dw",
+          "address": "blockx1apuxv2lfwdz9cqrmzqdt0yutdfw58sm24pch9z",
           "coins": [
             {
               "denom": "abcx",
@@ -77,7 +77,7 @@
     "claims": {
       "params": {
         "enable_claims": true,
-        "airdrop_start_time": "2022-09-04T04:45:24Z",
+        "airdrop_start_time": "2022-09-06T10:40:00Z",
         "duration_until_decay": "100000s",
         "duration_of_decay": "1000000s",
         "claims_denom": "abcx",
@@ -131,6 +131,15 @@
           "identifier": "day",
           "start_time": "0001-01-01T00:00:00Z",
           "duration": "86400s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        },
+        {
+          "identifier": "hour",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "3600s",
           "current_epoch": "0",
           "current_epoch_start_time": "0001-01-01T00:00:00Z",
           "epoch_counting_started": false,
@@ -220,11 +229,11 @@
                   "max_change_rate": "0.010000000000000000"
                 },
                 "min_self_delegation": "1",
-                "delegator_address": "blockx14gct2nk2d9f6rs0edsyg4nuavkng8t8u0qf6dw",
-                "validator_address": "blockxvaloper14gct2nk2d9f6rs0edsyg4nuavkng8t8u8zkv0x",
+                "delegator_address": "blockx1apuxv2lfwdz9cqrmzqdt0yutdfw58sm24pch9z",
+                "validator_address": "blockxvaloper1apuxv2lfwdz9cqrmzqdt0yutdfw58sm2ar8p82",
                 "pubkey": {
                   "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "EJpozjuZ4E9pYul77jmsNoxcga+UAJPGpXagHuErXlY="
+                  "key": "wUzDZd60oqDiNa4RWNO6r7NjI0AjvTZMWSNZC+LFkQA="
                 },
                 "value": {
                   "denom": "abcx",
@@ -232,7 +241,7 @@
                 }
               }
             ],
-            "memo": "50d5f80efc5a24a919a5d0f05e96728e19ee22b2@142.93.202.64:26656",
+            "memo": "5b88125d2ba33fee903f58534a2960b1108a9f82@142.93.202.64:26656",
             "timeout_height": "0",
             "extension_options": [],
             "non_critical_extension_options": []
@@ -242,7 +251,7 @@
               {
                 "public_key": {
                   "@type": "/ethermint.crypto.v1.ethsecp256k1.PubKey",
-                  "key": "Aj9ZMNesEh5aMpC2AwB5PqKflqAJJnYtoKul91Y3gxM5"
+                  "key": "A6qTCc3HKIjOFbOYrP6wKfbaW3sZpGj0yn8CcoUAoo7c"
                 },
                 "mode_info": {
                   "single": {
@@ -260,7 +269,7 @@
             }
           },
           "signatures": [
-            "J/tF65BeAIBAcBgCj0OonsFR9wjG3teWNRWnTQVKtIlzLmKSneHP6ZjW6UdL0hzdInz03gZ1EAGhObc7rc5vuQA="
+            "10Sqbt/wXX1HENKDTR9eU53pmgdWYfLhKhXfplwmz2xlRmMn6Y1fZvebbI+ROzaKWduigkgWZ+OtEPC9CFD2hQA="
           ]
         }
       ]
@@ -350,7 +359,7 @@
       },
       "period": "0",
       "epoch_identifier": "hour",
-      "epochs_per_period": "10",
+      "epochs_per_period": "2",
       "skipped_epochs": "0"
     },
     "params": null,
