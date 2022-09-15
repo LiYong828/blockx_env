@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2022-09-15T06:37:45.111410819Z",
+  "genesis_time": "2022-09-15T06:45:39.944109357Z",
   "chain_id": "blockx_12345-1",
   "initial_height": "1",
   "consensus_params": {
@@ -34,7 +34,7 @@
         {
           "@type": "/ethermint.types.v1.EthAccount",
           "base_account": {
-            "address": "blockx1pf82tl76hafuk5j3z0akwwt4zd0q8h3krfupad",
+            "address": "blockx1a3pyr5gmcccsz2uzrm74yk9xctnqw8t4tttxpw",
             "pub_key": null,
             "account_number": "0",
             "sequence": "0"
@@ -44,7 +44,7 @@
         {
           "@type": "/ethermint.types.v1.EthAccount",
           "base_account": {
-            "address": "blockx13s6up6tsahcja860svhdjv54jft2u7jpnwqdfh",
+            "address": "blockx1nsfv682fd7dus7vwwqh7udpt5lar3e02e2204r",
             "pub_key": null,
             "account_number": "0",
             "sequence": "0"
@@ -63,20 +63,20 @@
       },
       "balances": [
         {
-          "address": "blockx1pf82tl76hafuk5j3z0akwwt4zd0q8h3krfupad",
+          "address": "blockx1nsfv682fd7dus7vwwqh7udpt5lar3e02e2204r",
           "coins": [
             {
               "denom": "abcx",
-              "amount": "59900000000000000000000000"
+              "amount": "1000000000000000000000000"
             }
           ]
         },
         {
-          "address": "blockx13s6up6tsahcja860svhdjv54jft2u7jpnwqdfh",
+          "address": "blockx1a3pyr5gmcccsz2uzrm74yk9xctnqw8t4tttxpw",
           "coins": [
             {
               "denom": "abcx",
-              "amount": "100000000000000000000000"
+              "amount": "599000000000000000000000000"
             }
           ]
         }
@@ -84,7 +84,7 @@
       "supply": [
         {
           "denom": "abcx",
-          "amount": "60000000000000000000000000"
+          "amount": "600000000000000000000000000"
         }
       ],
       "denom_metadata": []
@@ -96,7 +96,7 @@
     "claims": {
       "params": {
         "enable_claims": true,
-        "airdrop_start_time": "2022-09-15T06:38:05Z",
+        "airdrop_start_time": "2022-09-15T06:46:05Z",
         "duration_until_decay": "100000s",
         "duration_of_decay": "1000000s",
         "claims_denom": "abcx",
